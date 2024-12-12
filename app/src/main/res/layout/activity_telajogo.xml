@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1"
+    android:gravity="center">
+
+    <!-- Imagem borrada -->
+    <ImageView
+        android:id="@+id/imgBlurred"
+        android:layout_width="310dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagem borrada" />
+
+    <!-- Controle de vidas (6 quadradinhos) -->
+    <LinearLayout
+        android:id="@+id/vidasContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <!-- Quadrados das vidas -->
+        <ImageView
+            android:id="@+id/vida1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quadrado_vida" /> <!-- Imagem padrão -->
+
+        <ImageView
+            android:id="@+id/vida2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quadrado_vida" />
+
+        <ImageView
+            android:id="@+id/vida3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quadrado_vida" />
+
+        <ImageView
+            android:id="@+id/vida4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quadrado_vida" />
+
+        <ImageView
+            android:id="@+id/vida5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quadrado_vida" />
+
+        <ImageView
+            android:id="@+id/vida6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quadrado_vida" />
+        <!-- ... -->
+    </LinearLayout>
+
+        <!-- LinearLayout horizontal para EditText, Button e Dica -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vidasContainer"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+
+        <!-- Campo para o jogador inserir a resposta -->
+            <EditText
+                android:id="@+id/edtResposta"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:hint="Digite sua resposta"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000" />  <!-- Cor do texto preto -->
+
+
+
+            <!-- Botão para enviar a resposta -->
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="Enviar"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+
+
+    <!-- Botão de Dica -->
+    <Button
+        android:id="@+id/btnDica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#D3D3D3"
+        android:text="Dica"
+        android:textColor="#000000" />
+
+    <!-- Campo para exibir a dica -->
+    <TextView
+        android:id="@+id/tvDica"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:visibility="gone" /> <!-- Inicialmente escondido -->
+
+
+</LinearLayout>

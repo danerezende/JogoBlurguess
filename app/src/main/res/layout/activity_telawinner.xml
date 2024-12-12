@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:gravity="center">
+
+
+    <!-- Texto feedback -->
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Aqui deve aparecer a mensagem de parabéns ou não"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <!-- Imagem revelada -->
+    <ImageView
+        android:id="@+id/imgBlurred"
+        android:layout_width="310dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagem Revelada" />
+
+    <!-- Título da imagem -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título: Aqui vai o título"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botão para Novo Jogo -->
+    <Button
+        android:id="@+id/btnNovoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Jogo"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
